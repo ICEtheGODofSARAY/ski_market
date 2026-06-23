@@ -1,0 +1,10 @@
+{% block title %} Ski Shop {% endblock %}
+
+<h1>Ski Market or shop idk</h1>
+{{today}}
+{% for card in ski_cards %}
+    <p>{{ card.name }}</p>
+    <p>{{ card.description }}</p>
+    <p>{{ card.price }}</p>
+    <img src="{{card.image.url}}">
+{% endfor %}

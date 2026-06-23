@@ -1,0 +1,9 @@
+{% load static %}
+{% block title %} Ski Shop {% endblock %}
+
+<h1>detail information</h1>
+<p>{{ ski_card.name }}</p>
+<p>{{ ski_card.description }}</p>
+<p>{{ ski_card.price }}</p>
+<p>{{ ski_card.image.url }}</p>
+<img src="{% static '{{ ski_card.image.url }}' %}" alt="My image">
