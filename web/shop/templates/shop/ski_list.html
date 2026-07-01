@@ -7,4 +7,5 @@
     <p>{{ card.description }}</p>
     <p>{{ card.price }}</p>
     <img src="{{card.image.url}}">
+    <a href="{% url 'detail' card.pk %}"> {{ card.name }} ---> </a>
 {% endfor %}
