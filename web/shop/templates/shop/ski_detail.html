@@ -5,5 +5,4 @@
 <p>{{ ski_card.name }}</p>
 <p>{{ ski_card.description }}</p>
 <p>{{ ski_card.price }}</p>
-<p>{{ ski_card.image.url }}</p>
-<img src="{% static '{{ ski_card.image.url }}' %}" alt="My image">
+<img src="{{ ski_card.image.url }}" alt="{{ ski_card.name }}">
