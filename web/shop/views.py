@@ -21,3 +21,6 @@ def suitcard_details(request, card_id):
     card = SuitCard.objects.get(pk=card_id)
     context = {"suit_card": card}
     return render(request, "shop/suit_detail.html", context)
+
+def home_page(request):
+    return render(request, template_name="shop/home_page.html")

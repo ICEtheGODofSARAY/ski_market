@@ -22,7 +22,7 @@ from . import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("shop/", include("shop.urls")),
+    path("shop/", include("shop.urls"))
 ]
 
 if True:
