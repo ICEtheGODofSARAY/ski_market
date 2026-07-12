@@ -1,11 +1,11 @@
 {% block title %} Ski Shop {% endblock %}
 
 <h1>Ski Market or shop idk</h1>
-{{today}}
-{% for card in ski_cards %}
+{% for card in suit_cards %}
     <p>{{ card.name }}</p>
     <p>{{ card.description }}</p>
     <p>{{ card.price }}</p>
+    <p>{{ card.size }}</p>
     <img src="{{card.image.url}}">
-    <a href="{% url 'ski_detail' card.pk %}"> {{ card.name }} ---> </a>
+    <a href="{% url 'suit_detail' card.pk %}"> {{ card.name }} ---> </a>
 {% endfor %}
