@@ -19,11 +19,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views, login
 
+from accounts.views import SignUpView
 from . import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("shop/", include("shop.urls")),
+    path('accounts/signup/', SignUpView.as_view(), name='signup'),
     path('accounts/', include('django.contrib.auth.urls'))
 ]
 
