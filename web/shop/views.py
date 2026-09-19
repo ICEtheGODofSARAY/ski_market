@@ -24,3 +24,7 @@ def suitcard_details(request, card_id):
 
 def home_page(request):
     return render(request, template_name="shop/home_page.html")
+
+def hello_world(request, page_id):
+    context = {"page_id": page_id}
+    return render(request, template_name="shop/hello_world.html", context=context)

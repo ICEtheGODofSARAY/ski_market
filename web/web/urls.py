@@ -24,6 +24,7 @@ from . import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('cipher/', include("cipher.urls")),
     path("shop/", include("shop.urls")),
     path('accounts/signup/', SignUpView.as_view(), name='signup'),
     path('accounts/', include('django.contrib.auth.urls'))

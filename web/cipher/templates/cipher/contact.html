@@ -1,0 +1,10 @@
+<form method="post">
+    {% csrf_token %}
+    {{ key_form.as_p }}
+    <button type="submit">Отправить</button>
+</form>
+<form method="post">
+    {% csrf_token %}
+    {{ cipher_form.as_p }}
+    <button type="submit">Отправить</button>
+</form>

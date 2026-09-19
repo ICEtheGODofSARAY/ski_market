@@ -41,7 +41,8 @@ INSTALLED_APPS = [
 
     'shop.apps.ShopConfig',
     'users.apps.UsersConfig',
-    'accounts.apps.AccountsConfig'
+    # 'accounts.apps.AccountsConfig'
+    'cipher.apps.CipherConfig'
 ]
 
 MIDDLEWARE = [
